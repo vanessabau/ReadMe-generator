@@ -58,7 +58,7 @@ inquirer
 #README ${title}\n
     ## CREATED BY GITHUB USER: ${username}\n
     GITHUB PROFILE PHOTO: [${username}](${profilePic})\n
-    EMAIL: ${email}\n
+    GITHUB EMAIL: ${email}\n
     ## TABLE OF CONTENTS
         1. [Description](#description)\n
         2. [Installation](#Installation)\n
