@@ -54,8 +54,7 @@ inquirer
 
             //Format README file contents
             let readMe = 
-            `
-#README ${title}\n
+`#README ${title}\n
     ## CREATED BY GITHUB USER: ${username}\n
     GITHUB PROFILE PHOTO: [${username}](${profilePic})\n
     GITHUB EMAIL: ${email}\n
@@ -76,8 +75,7 @@ inquirer
     6. How to Test: ${tests}\n
     7. Questions: 
     
-    BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
-        `
+    BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
