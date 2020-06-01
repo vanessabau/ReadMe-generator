@@ -1,20 +1,17 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const axios = require("axios");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-//given push answers to this array?
-// const questions = [
-
-// ];
 
 //Prompt user for information
 function promptUser(){
     return inquirer.prompt([
         {
             type: "input",
-            name: "githubUser",
+            name: "username",
             message: "What is your Github user name?"
         },
         {
@@ -32,7 +29,7 @@ function promptUser(){
 
 //function generateReadme(fileName, data) {
 function generateReadme(answers) {
-    return `${answers.githubUser} README \n Project Description: ${answers.description}`
+    return `${answers.username} README \n Project Description: ${answers.description}`
 }
 
 //promise.then method in another syntax
