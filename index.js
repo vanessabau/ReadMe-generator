@@ -54,28 +54,28 @@ inquirer
 
             //Format README file contents
             let readMe = 
-`#README ${title}\n
-    ## CREATED BY GITHUB USER: ${username}\n
-    GITHUB PROFILE PHOTO: [${username}](${profilePic})\n
-    GITHUB EMAIL: ${email}\n
-    ## TABLE OF CONTENTS
-        1. [Description](#description)\n
-        2. [Installation](#Installation)\n
-        3. [How to use](#How to Use)\n
-        4. [Licensing](#Licensing)\n
-        5. [Contributors](#Contributors)\n
-        6. [Tests](#Tests)\n
-        7. [Questions](#Questions)\n\n
-    
-    1. Description: ${description}\n
-    2. Installation: ${installation}\n
-    3. How to Use: ${useage}\n
-    4. Licensing: ${license}\n
-    5. Contributors: ${contributors}\n
-    6. How to Test: ${tests}\n
-    7. Questions: 
-    
-    BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
+`#README ${title}
+## CREATED BY GITHUB USER: ${username}
+GITHUB PROFILE PHOTO: [${username}](${profilePic})
+GITHUB EMAIL: ${email}
+## TABLE OF CONTENTS
+1. [Description](#description)
+2. [Installation](#Installation)
+3. [How to Use](#How to Use)
+4. [Licensing](#Licensing)
+5. [Contributors](#Contributors)
+6. [Tests](#Tests)
+7. [Questions](#Questions)
+
+1. Description: ${description}
+2. Installation: ${installation}
+3. How to Use: ${useage}
+4. Licensing: ${license}
+5. Contributors: ${contributors}
+6. How to Test: ${tests}
+7. Questions: 
+
+BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
