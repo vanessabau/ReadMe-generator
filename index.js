@@ -9,7 +9,8 @@ inquirer
     .prompt([
             {
                 name: "username",
-                message: "Enter your GitHub username:"
+                message: "Enter your GitHub username:",
+                default: "vanessabau"
             },
             {
                 name: "title",
@@ -61,7 +62,7 @@ GITHUB EMAIL: ${email}
 ## TABLE OF CONTENTS
 1. [Description](#description)
 2. [Installation](#Installation)
-3. [How to Use](#How to Use)
+3. [Useage](#Useage)
 4. [Licensing](#Licensing)
 5. [Contributors](#Contributors)
 6. [Tests](#Tests)
@@ -69,7 +70,7 @@ GITHUB EMAIL: ${email}
 
 1. Description: ${description}
 2. Installation: ${installation}
-3. How to Use: ${useage}
+3. Useage: ${useage}
 4. Licensing: ${license}
 5. Contributors: ${contributors}
 6. How to Test: ${tests}
