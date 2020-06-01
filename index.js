@@ -10,7 +10,7 @@ inquirer
             {
                 name: "username",
                 message: "Enter your GitHub username:",
-                default: "vanessabau"
+                //default: "vanessabau"
             },
             {
                 name: "title",
@@ -55,7 +55,7 @@ inquirer
 
             //Format README file contents
             let readMe = 
-`#README ${title}
+`# README ${title}
 ## CREATED BY GITHUB USER: ${username}
 GITHUB PROFILE PHOTO: [${username}](${profilePic})
 GITHUB EMAIL: ${email}
@@ -68,7 +68,7 @@ GITHUB EMAIL: ${email}
 6. [Tests](#Tests)
 7. [Questions](#Questions)
 
-#CONTENT
+## CONTENT
 1. Description: ${description}
 2. Installation: ${installation}
 3. Useage: ${useage}
