@@ -11,11 +11,12 @@ GITHUB EMAIL: null
 6. [Tests](#Tests)
 7. [Questions](#Questions)
 
+#CONTENT
 1. Description: 
 2. Installation: 
 3. Useage: 
-4. Licensing: sdf
-5. Contributors: as
+4. Licensing: 
+5. Contributors: 
 6. How to Test: 
 7. Questions: 
 
