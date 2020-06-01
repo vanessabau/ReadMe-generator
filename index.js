@@ -3,52 +3,88 @@ const fs = require("fs");
 const util = require("util");
 const axios = require("axios");
 
-const writeFileAsync = util.promisify(fs.writeFile);
 
+//Prompt user for github username
+inquirer
+    .prompt([
+            {
+                name: "username",
+                message: "Enter your GitHub username:"
+            },
+            {
+                name: "title",
+                message: "Please enter your Project Title"
+            },
+            {
+                name: "description",
+                message: "Please enter a short description of your project that includes the motivation to build the project:  "
+            },
+            {
+                name: "installation",
+                message: "What are the project installation steps?"
+            },
+            {
+                name: "useage",
+                message: "How should your project be used?"
+            }, 
+            {
+                name: "license",
+                message: "Indicate project license(s):"
+            },
+            {
+                name: "contributors",
+                message: "List any contributors: "
+            },
+            {
+                name: "tests",
+                message: "Explain how to run testing: "
+            }     
+        ])
+        .then(function({ username, title, description, installation, useage, license, contributors, tests  }) {
+            //create query url
+            const queryUrl = `https://api.github.com/users/${username}`;
 
-//Prompt user for information
-function promptUser(){
-    return inquirer.prompt([
-        {
-            type: "input",
-            name: "username",
-            message: "What is your Github user name?"
-        },
-        {
-            type: "input",
-            name: "projectTitle",
-            message: "Please enter your Project Title"
-        },
-        {
-            type: "input",
-            name: "description",
-            message: "Please enter a description of your project"
-        }   
-    ]);
-}
+            //with query url create axios call
+            axios
+            .get(queryUrl)
+            .then(function(res) {
+            //store github email and profile pic in variables
+            const email = res.data.email;
+            const profilePic = res.data.avatar_url;
 
-//function generateReadme(fileName, data) {
-function generateReadme(answers) {
-    return `${answers.username} README \n Project Description: ${answers.description}`
-}
+            //Format README file contents
+            let readMe = 
+            `
+#README ${title}\n
+    ## CREATED BY GITHUB USER: ${username}\n
+    GITHUB PROFILE PHOTO: [${username}](${profilePic})\n
+    EMAIL: ${email}\n
+    ## TABLE OF CONTENTS
+        1. [Description](#description)\n
+        2. [Installation](#Installation)\n
+        3. [How to use](#How to Use)\n
+        4. [Licensing](#Licensing)\n
+        5. [Contributors](#Contributors)\n
+        6. [Tests](#Tests)\n
+        7. [Questions](#Questions)\n\n
+    
+    1. Description: ${description}\n
+    2. Installation: ${installation}\n
+    3. How to Use: ${useage}\n
+    4. Licensing: ${license}\n
+    5. Contributors: ${contributors}\n
+    6. How to Test: ${tests}\n
+    7. Questions: 
+    
+    BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
+        `
 
-//promise.then method in another syntax
-async function init() {
-    console.log("hi")
-    try {
-      //return result in variable answers
-      const answers = await promptUser();
-        console.log(answers);
-       const text = generateReadme(answers);
-  
-      //write text content in readme.md file
-      await writeFileAsync("Readme.md", text);
-  
-      console.log("Successfully wrote to Readme.md");
-    } catch(err) {
-      console.log(err);
-    }
-  }
-
-init();
-
+            //Write readMe to .md file
+            fs.writeFile("README.md", readMe, function(err) {
+                if (err) {
+                throw err;
+                }
+                console.log(`Readme successfully written`);
+            });
+            });
+        });
