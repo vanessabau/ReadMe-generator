@@ -69,15 +69,15 @@ GITHUB EMAIL: ${email}
 7. [Questions](#Questions)
 
 ## CONTENT
-1. Description: ${description}
-2. Installation: ${installation}
-3. Useage: ${useage}
-4. Licensing: ${license}
-5. Contributors: ${contributors}
-6. How to Test: ${tests}
-7. Questions: 
+1. **Description:** ${description}
+2. **Installation:** ${installation}
+3. **Useage:** ${useage}
+4. **Licensing:** ${license}
+5. **Contributors:** ${contributors}
+6. **How to Test:** ${tests}
+7. **Questions:** 
 
-BADGE:[made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
+BADGE: [made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
