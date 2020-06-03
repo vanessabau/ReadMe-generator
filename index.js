@@ -18,7 +18,7 @@ inquirer
             },
             {
                 name: "description",
-                message: "Please enter a short description of your project that includes the motivation to build the project:  "
+                message: "Please enter a brief description of your project: "
             },
             {
                 name: "installation",
@@ -39,9 +39,13 @@ inquirer
             {
                 name: "tests",
                 message: "Explain how to run testing: "
-            }     
+            }, 
+            {
+                name: "questions",
+                message: "Remaining questions: "
+            }         
         ])
-        .then(function({ username, title, description, installation, useage, license, contributors, tests  }) {
+        .then(function({ username, title, description, installation, useage, license, contributors, tests, questions  }) {
             //create query url
             const queryUrl = `https://api.github.com/users/${username}`;
 
@@ -56,21 +60,20 @@ inquirer
             //Format README file contents
             let readMe = 
 `# README ${title}
-## CREATED BY GITHUB USER: ${username}
-![${username}](${profilePic})
+# ${description}
+# ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
+## GITHUB USER: ${username}
 ## GITHUB EMAIL: ${email}
+# ![${username}](${profilePic})
 ## TABLE OF CONTENTS
-1. [Description](###Description)
-2. [Installation](###Installation)
-3. [Useage](###Useage)
-4. [Licensing](###Licensing)
-5. [Contributors](###Contributors)
-6. [Tests](###Testing)
-7. [Questions](###Questions)
+1. [Installation](###Installation)
+2. [Useage](###Useage)
+3. [Licensing](###Licensing)
+4. [Contributors](###Contributors)
+5. [Tests](###Testing)
+6. [Questions](###Questions)
 
 ## CONTENT
-### Description
-${description}
 ### Installation
 ${installation}
 ### Useage
@@ -82,9 +85,8 @@ ${contributors}
 ### Testing
 ${tests}
 ### Questions
-
-### Badges
-![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
+${questions}
+`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
