@@ -60,7 +60,7 @@ inquirer
 GITHUB PROFILE PHOTO: [${username}](${profilePic})
 GITHUB EMAIL: ${email}
 ## TABLE OF CONTENTS
-1. [Description](#description)
+1. [Description](#Description)
 2. [Installation](#Installation)
 3. [Useage](#Useage)
 4. [Licensing](#Licensing)
@@ -69,7 +69,7 @@ GITHUB EMAIL: ${email}
 7. [Questions](#Questions)
 
 ## CONTENT
-1. **{: #description}Description:** ${description}
+# Description: ${description}
 2. **Installation:** ${installation}
 3. **Useage:** ${useage}
 4. **Licensing:** ${license}
