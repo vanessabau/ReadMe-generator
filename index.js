@@ -58,32 +58,32 @@ inquirer
 `# README ${title}
 ## CREATED BY GITHUB USER: ${username}
 ![${username}](${profilePic})
-##GITHUB EMAIL: ${email}
+## GITHUB EMAIL: ${email}
 ## TABLE OF CONTENTS
-1. [Description](#Description)
-2. [Installation](#Installation)
-3. [Useage](#Useage)
-4. [Licensing](#Licensing)
-5. [Contributors](#Contributors)
+1. [Description](###Description)
+2. [Installation](###Installation)
+3. [Useage](###Useage)
+4. [Licensing](###Licensing)
+5. [Contributors](###Contributors)
 6. [Tests](###Testing)
 7. [Questions](###Questions)
 
 ## CONTENT
-# Description
+### Description
 ${description}
-# Installation
+### Installation
 ${installation}
-# Useage
+### Useage
 ${useage}
-# Licensing
+### Licensing
 ${license}
-# Contributors
+### Contributors
 ${contributors}
 ### Testing
 ${tests}
 ### Questions
 
-### BADGE
+### Badges
 ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
