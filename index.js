@@ -57,28 +57,33 @@ inquirer
             let readMe = 
 `# README ${title}
 ## CREATED BY GITHUB USER: ${username}
-GITHUB PROFILE PHOTO: [${username}](${profilePic})
-GITHUB EMAIL: ${email}
+![${username}](${profilePic})
+##GITHUB EMAIL: ${email}
 ## TABLE OF CONTENTS
 1. [Description](#Description)
 2. [Installation](#Installation)
 3. [Useage](#Useage)
 4. [Licensing](#Licensing)
 5. [Contributors](#Contributors)
-6. [Tests](#Tests)
+6. [Tests](#Testing)
 7. [Questions](#Questions)
 
 ## CONTENT
 # Description
 ${description}
-2. **Installation:** ${installation}
-3. **Useage:** ${useage}
-4. **Licensing:** ${license}
-5. **Contributors:** ${contributors}
-6. **How to Test:** ${tests}
-7. **Questions:** 
+#Installation
+${installation}
+#Useage
+${useage}
+#Licensing
+${license}
+#Contributors
+${contributors}
+#Testing
+${tests}
+#Questions
 
-**BADGE:** [made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
+**BADGE:** ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
