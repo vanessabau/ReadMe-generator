@@ -65,25 +65,26 @@ inquirer
 3. [Useage](#Useage)
 4. [Licensing](#Licensing)
 5. [Contributors](#Contributors)
-6. [Tests](#Testing)
-7. [Questions](#Questions)
+6. [Tests](###Testing)
+7. [Questions](###Questions)
 
 ## CONTENT
 # Description
 ${description}
-#Installation
+# Installation
 ${installation}
-#Useage
+# Useage
 ${useage}
-#Licensing
+# Licensing
 ${license}
-#Contributors
+# Contributors
 ${contributors}
-#Testing
+### Testing
 ${tests}
-#Questions
+### Questions
 
-**BADGE:** ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
+### BADGE
+![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)`
 
             //Write readMe to .md file
             fs.writeFile("README.md", readMe, function(err) {
