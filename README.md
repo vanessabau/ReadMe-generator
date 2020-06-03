@@ -1,30 +1,27 @@
-# README asfhj 
-## ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
+# README Readme-Generator
+# Automated template that produces an organized and formatted readme.md file
+# ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
 ## GITHUB USER: vanessabau
-## ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
 ## GITHUB EMAIL: null
+# ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
 ## TABLE OF CONTENTS
-1. [Description](###Description)
-2. [Installation](###Installation)
-3. [Useage](###Useage)
-4. [Licensing](###Licensing)
-5. [Contributors](###Contributors)
-6. [Tests](###Testing)
-7. [Questions](###Questions)
+1. [Installation](###Installation)
+2. [Useage](###Useage)
+3. [Licensing](###Licensing)
+4. [Contributors](###Contributors)
+5. [Tests](###Testing)
+6. [Questions](###Questions)
 
 ## CONTENT
-### Description
-dfjh
 ### Installation
-dfh
+To use, run 'npm install' from terminal
 ### Useage
-wiufh
+This is a CLI application to be used in terminal. Open terminal and run 'node index' then follow the prompts
 ### Licensing
-wufh
+None
 ### Contributors
-wiuf
+None
 ### Testing
-wiehf
+Currently no tests are available
 ### Questions
-
-### Badges
+None
