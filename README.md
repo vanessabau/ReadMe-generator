@@ -4,6 +4,8 @@ Automated template that produces an organized and formatted readme.md file
 ## GITHUB USER: vanessabau
 ## GITHUB EMAIL: null
 # ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
+
+# ![Video demonstration](https://www.youtube.com/watch?v=2qkHq4gDnE4)
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
