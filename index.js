@@ -69,7 +69,8 @@ GITHUB EMAIL: ${email}
 7. [Questions](#Questions)
 
 ## CONTENT
-# Description: ${description}
+# Description
+${description}
 2. **Installation:** ${installation}
 3. **Useage:** ${useage}
 4. **Licensing:** ${license}
