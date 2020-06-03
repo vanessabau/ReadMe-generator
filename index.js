@@ -65,7 +65,8 @@ ${description}
 ## GITHUB USER: ${username}
 ## GITHUB EMAIL: ${email}
 # ![${username}](${profilePic})
-# [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.41.56%20AM.png](https://www.youtube.com/watch?v=2qkHq4gDnE4)
+# Click link below to watch demo
+[![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.41.56%20AM.png](https://www.youtube.com/watch?v=2qkHq4gDnE4)
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
