@@ -4,8 +4,7 @@ Automated template that produces an organized and formatted readme.md file
 ## GITHUB USER: vanessabau
 ## GITHUB EMAIL: null
 # ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
-
-# [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.09.11%20AM.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
+# [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.34.46%20AM.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
@@ -16,14 +15,14 @@ Automated template that produces an organized and formatted readme.md file
 
 ## CONTENT
 ### Installation
-To use, run 'npm install' from terminal
+To use, run 'npm install' from terminal to add dependencies.
 ### Useage
-This is a CLI application to be used in terminal. Open terminal and run 'node index' then follow the prompts
+This is a CLI application to be used from the terminal. Open terminal and run 'node index' then follow the prompts.
 ### Licensing
 None
 ### Contributors
 None
 ### Testing
-Currently no tests are available
+Currently no tests are availble
 ### Questions
 None
