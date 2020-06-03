@@ -5,7 +5,7 @@ Automated template that produces an organized and formatted readme.md file
 ## GITHUB EMAIL: null
 # ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
 
-# [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
+# [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.09.11%20AM.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
