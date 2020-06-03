@@ -60,7 +60,7 @@ inquirer
             //Format README file contents
             let readMe = 
 `# README ${title}
-# ${description}
+${description}
 # ![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)
 ## GITHUB USER: ${username}
 ## GITHUB EMAIL: ${email}
