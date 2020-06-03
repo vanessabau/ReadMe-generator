@@ -6,7 +6,6 @@ Automated template that produces an organized and formatted readme.md file
 # ![vanessabau](https://avatars2.githubusercontent.com/u/59780981?v=4)
 ## Click video link below to watch demo
 # [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.41.56%20AM.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
- 
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
@@ -17,14 +16,14 @@ Automated template that produces an organized and formatted readme.md file
 
 ## CONTENT
 ### Installation
-To use, run 'npm install' from terminal to add dependencies.
+To use run 'npm install' from terminal on to add dependencies.
 ### Useage
-This is a CLI application to be used from the terminal. Open terminal and run 'node index' then follow the prompts.
+This is a CLI application to be used from the terminal. Once dependencies are installed open terminal and run 'node index' then follow the prompts.
 ### Licensing
 None
 ### Contributors
 None
 ### Testing
-Currently no tests are availble
+Currently no tests are available.
 ### Questions
 None

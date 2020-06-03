@@ -10,39 +10,47 @@ inquirer
             {
                 name: "username",
                 message: "Enter your GitHub username:",
-                //default: "vanessabau"
+                default: "vanessabau"
             },
             {
                 name: "title",
-                message: "Please enter your Project Title"
+                message: "Please enter your Project Title",
+                default: "Readme-Generator"
             },
             {
                 name: "description",
-                message: "Please enter a brief description of your project: "
+                message: "Please enter a brief description of your project: ",
+                default: "Automated template that produces an organized and formatted readme.md file"
             },
             {
                 name: "installation",
-                message: "What are the project installation steps?"
+                message: "What are the project installation steps?",
+                default: "To use run 'npm install' from terminal on to add dependencies."
             },
             {
                 name: "useage",
-                message: "How should your project be used?"
+                message: "How should your project be used?",
+                default: "This is a CLI application to be used from the terminal. Once dependencies are installed open terminal and run 'node index' then follow the prompts."
             }, 
             {
                 name: "license",
-                message: "Indicate project license(s):"
+                message: "Indicate project license(s):",
+                default: "None"
             },
             {
                 name: "contributors",
-                message: "List any contributors: "
+                message: "List any contributors: ",
+                default: "None"
             },
             {
                 name: "tests",
-                message: "Explain how to run testing: "
+                message: "Explain how to run testing: ", 
+                default: "Currently no tests are available."
             }, 
             {
                 name: "questions",
-                message: "Remaining questions: "
+                message: "Remaining questions: ",
+                default: "None"
             }         
         ])
         .then(function({ username, title, description, installation, useage, license, contributors, tests, questions  }) {
@@ -65,8 +73,8 @@ ${description}
 ## GITHUB USER: ${username}
 ## GITHUB EMAIL: ${email}
 # ![${username}](${profilePic})
-# Click link below to watch demo
-[![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.41.56%20AM.png](https://www.youtube.com/watch?v=2qkHq4gDnE4)
+## Click video link below to watch demo
+# [![Watch the video](https://raw.githubusercontent.com/vanessabau/ReadMe-generator/master/Screen%20Shot%202020-06-03%20at%2011.41.56%20AM.png)](https://www.youtube.com/watch?v=2qkHq4gDnE4)
 ## TABLE OF CONTENTS
 1. [Installation](###Installation)
 2. [Useage](###Useage)
